@@ -1,0 +1,53 @@
+@use "variables";
+@use "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: $primary-text-color;
+}
+
+html, body, #__nuxt {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, select {
+  outline: none;
+  padding: 8px;
+  color: $primary-text-color;
+  background-color: $secondary-backround;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+
+  &:focus {
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  }
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-items {
+  display: flex;
+  align-items: center;
+}
